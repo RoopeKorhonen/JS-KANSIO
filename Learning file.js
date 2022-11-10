@@ -1,7 +1,7 @@
 'use strict';
 let kohde = document.querySelector('#kohde')
 /*let kohdekaks = document.querySelector('#2kohde')
- /* tehtävä 2
+/* tehtävä 2
 console.log('Voisitko toimia.');
 document.querySelector(
 '#otsikko').innerHTML =
@@ -10,7 +10,8 @@ document.querySelector(
 const name = prompt('Type your name.');
 console.log('NOH TERVETULLOO ' + name, 'KALJAASIIN 3 PÄIVÄÄ'),
 document.querySelector('#kohde').innerHTML = 'Moro miten menee ' + name;
-*//* tehtävä 3
+*/
+/* tehtävä 3
 let firstnumber = parseInt(prompt('Kirjota eka numero.'));
 let secondnumber = parseInt(prompt('Kirjota toinen numero.'));
 let thirdnumber = parseInt(prompt('Kirjota kolmas numero.'));
@@ -31,7 +32,8 @@ else
 kohde.innerHTML = 'Vuosi ei ole karkausvuosi'
 }
 
-*/ /* tehtävä 8
+*/
+/* tehtävä 8
 let alku = parseInt(prompt('Anna alkuvuosi'))
 let loppu = parseInt(prompt('Anna loppuvuosi'))
 let html = '<ul>';
@@ -45,7 +47,8 @@ html += '</li>'
 }
 }
 html += '</ul>';
-kohde.innerHTML = html *//* TEHTÄVÄ4
+kohde.innerHTML = html */
+/* Tehtävä 4
 const name = prompt('Type your name.');
 
 let result = Math.floor(Math.random()*4)+1;
@@ -62,7 +65,7 @@ else if (result === 3)
 else if(result === 4)
     kohde.innerHTML = name + ', you are Ravenclaw';
 }*/
-/*tehtävät 6
+/*Tehtävät 6
 let kysymys = confirm('Should I calculate the square root?')
 
     if (kysymys == false)
@@ -82,7 +85,7 @@ let kysymys = confirm('Should I calculate the square root?')
             kohde.innerHTML = 'Square ' + numero + ' is ' + result;
         }
     }*/
-/* tehtävä 7
+/* Tehtävä 7
 let noppamaara = parseInt(prompt('Give number of dices.'))
 let summa = 0
 for (let v = 0; v != noppamaara; v++)
@@ -91,7 +94,7 @@ for (let v = 0; v != noppamaara; v++)
     summa = summa + noppanumero
 }
 kohde.innerHTML = 'Dices result is,' + summa;*/
-/* tehtävä 9
+/* Tehtävä 9
 
 let primenum = true;
 const num = parseInt(prompt("Give number!!!"));
@@ -112,8 +115,23 @@ if (num > 1) {
 }
 else {
     kohde.innerHTML = num + " is not a prime number";
-}*//*Tehtävä 10*/
+}*//*Tehtävä 10
 
+let noppamaara = parseInt(prompt('Give number of dices.'))
+let todennakoisyys = parseInt(prompt("Give dices result"))
+let osumat = 0
+
+for (let v = 0; v != 10000; v++){
+    let summa = 0
+    for (let i = 0; i != noppamaara; i++){
+        let noppanumero = Math.floor(Math.random() * 6) + 1
+        summa = noppanumero + summa
+        if (summa == todennakoisyys){
+            osumat++
+        }
+    }
+}
+kohde.innerHTML = 'The probability with ' + todennakoisyys + ' with ' + noppamaara + ' is '+ (osumat/100) + '%';*/
 
 
 
