@@ -62,19 +62,36 @@ else if (result === 3)
 else if(result === 4)
     kohde.innerHTML = name + ', you are Ravenclaw';
 }*/
-/*tehtävät 6*/
+/*tehtävät 6
 let kysymys = confirm('Should I calculate the square root?')
-{
-    if (kysymys == true)
+
+    if (kysymys == false)
+    {
+        kohde.innerHTML = 'The square root is not calculated.';
+    }
+    else
     {
         let numero = parseInt(prompt('Give number.'))
-        let result = Math.sqrt(numero);
-        kohde.innerHTML = 'Square is ' + result;
-    }
-    else if (kysymys == false)
-        kohde.innerHTML = 'The square root is not calculated.'
+        if (numero < 0 )
+        {
+            kohde.innerHTML = 'The square root of a negative number is not defined'
+        }
+        else
+        {
+            let result = Math.sqrt(numero);
+            kohde.innerHTML = 'Square ' + numero + ' is ' + result;
+        }
+    }*/
+/* tehtävä 7
+let noppamaara = parseInt(prompt('Give number of dices.'))
+let summa = 0
+for (let v = 0; v != noppamaara; v++)
+{
+    let noppanumero =  Math.floor(Math.random()*6)+1
+    summa = summa + noppanumero
 }
-
+kohde.innerHTML = 'Dices result is,' + summa;*/
+/* tehtävä 9*/
 
 
 
