@@ -91,8 +91,28 @@ for (let v = 0; v != noppamaara; v++)
     summa = summa + noppanumero
 }
 kohde.innerHTML = 'Dices result is,' + summa;*/
-/* tehtävä 9*/
+/* tehtävä 9
 
+let primenum = true;
+const num = parseInt(prompt("Give number!!!"));
+
+if (num > 1) {
+    for (let i = 2; i < num; i++) {
+        if (num % i == 0) {
+            primenum = false;
+            break;
+        }
+    }
+
+    if (primenum) {
+        kohde.innerHTML = num + " is a prime number";
+    } else {
+        kohde.innerHTML = num + " is not a prime number";
+    }
+}
+else {
+    kohde.innerHTML = num + " is not a prime number";
+}*//*Tehtävä 10*/
 
 
 
